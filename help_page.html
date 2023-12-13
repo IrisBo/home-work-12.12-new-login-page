@@ -13,17 +13,25 @@
 <body>
 
     <div class="my_form">
-        <h2 id="my_password" class="font_style">Need Help?</h2>
-        <form class="font_style" >
+        <h2  class="font_style">Need Help?</h2>
+        <!-- <form class="font_style" > -->
            <div class="div1">
-              <label class="font_style">Enter the magic word to get the password</label>
-              <input type="text" class="text_1" placeholder="write here">
-            
+              <label for="passwordInput" class="font_style">Enter the magic word to get the password</label>
+              <input type="text" id="passwordInput" placeholder="write here">
+              <p class="font_style" id="message"></p> 
            </div>
            <div>
-            <button class="font_style" onclick="getPassword()">Get the password</button>
+            <button class="font_style" onclick="checkPassword()">Get the password</button>
          </div>
-         </form>
+         <!-- </form> -->
+        
     
 </body>
+<!-- <label for="passwordInput">Enter Password:</label>
+  <input type="text" id="passwordInput">
+  
+  <button onclick="checkPassword()">Check Password</button>
+  
+  <p id="message"></p> -->
+
 </html>
