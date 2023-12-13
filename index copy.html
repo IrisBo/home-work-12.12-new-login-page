@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <script src="scrips.js">
+   </script>
+   <style>
+      .my_form {
+         background-color: rgba(255, 255, 255, 0.7);
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.553);
+         padding: 20px;
+         width: 300px;
+         align-self: center;
+       
+
+      }
+
+      h1 {
+         text-align:center
+       
+      }
+
+
+      label {
+         display: block;
+         font-weight: bold;
+         margin-bottom: 5px;
+      }
+
+
+      input {
+         width: 100%;
+         padding: 8px;
+         margin-top: 10px;
+         box-sizing: border-box;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+      }
+
+      .font_style {
+         font-family: Georgia, 'Times New Roman', Times, serif;
+
+      }
+
+      body {
+         /* background: linear-gradient(to right, #ffdea8, #fec84e) */
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         background-image: url('https://s1.travix.com/blog/eu/europe-netherlands-tulips-tulipfield-flowers-sunset-medium.jpg');
+         margin: 0;
+         padding: 0;
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         text-align: center; Center text horizontally
+      }
+
+      .div1 {
+         margin-bottom:30px;
+      }
+
+      button {
+         cursor: pointer;
+         padding: 10px 15px;
+         border: none;
+         color: #fff;
+         border-radius: 5px;
+         background-color: #4caf50;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         box-shadow: 0 0 2px rgba(0, 0, 0, 0.704);
+      }
+
+      button:active {
+         background-color: #4caf50;
+         box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.562);
+      }
+   </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <!-- log in page -->
+   <h1 class="font_style"> Wellcome!</h1>
+
+   <br>
+   <br>
+
+   <div class="my_form">
+      <h2 class="font_style">Please log in</h2>
+      <form class="font_style" onsubmit="checkDetails()" >
+         <div class="div1">
+            <label class="font_style"> user name</label>
+            <input type="email" class="email_1" placeholder="type your username">
+         </div>
+         <div class="div1">
+            <label class="font_style"> password</label>
+            <input type="password" class="password_1" placeholder="type your password">
+         </div>
+         <div>
+            <button class="font_style" type="submit">submit</button>
+         </div>
+      </form>
+   </div>
+
+   <a class="font_style" href="">need help?</a>
+
+</body>
+
+</html>

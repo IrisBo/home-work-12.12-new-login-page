@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <script src="scrips.js">
+   </script>
+   <style>
+      h1 {
+         text-align: center;
+      }
+
+      .font_style {
+         font-family: Georgia, 'Times New Roman', Times, serif;
+
+      }
+
+      body {
+         background: linear-gradient(to right, #ffdea8, #fec84e)
+      }
+
+      div {
+         padding: 20px;
+      }
+
+      label {
+         display: flex;
+      }
+
+      button {
+         border-radius: 5px;
+         background-color: rgb(160, 243, 143);
+         font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      button:active {
+         background-color: rgb(234, 237, 73);
+      }
+   </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <!-- log in page -->
+   <h1 class="font_style"> Lets log in!</h1>
+
+   <div>
+      <div class="div1">
+         <label class="font_style"> user name</label><input type="email" class="email_1"
+            placeholder="type your username">
+      </div>
+      <div class="div2">
+         <label class="font_style"> password</label><input type="password" class="password_1"
+            placeholder="type your password">
+      </div>
+      <div>
+         <button onclick="checkDetails()">click here</button>
+      </div>
+   </div>
+
+</body>
+
+</html>
