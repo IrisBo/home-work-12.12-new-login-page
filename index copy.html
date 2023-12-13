@@ -4,7 +4,8 @@
 <head>
    <script src="scrips.js">
    </script>
-   <style>
+   <link rel="stylesheet" href="style.css">
+   <!-- <style>
       .my_form {
          background-color: rgba(255, 255, 255, 0.7);
          border-radius: 10px;
@@ -42,6 +43,16 @@
          font-family: Georgia, 'Times New Roman', Times, serif;
 
       }
+      #help{
+         size: 15px;
+         margin: 20px;
+         display: block;
+         background-color: rgba(245, 245, 245, 0.471);
+         border-radius: 5px;
+         padding: 5px;
+         font-weight: bold;
+         color: rgb(71 14 250);
+      }
 
       body {
          /* background: linear-gradient(to right, #ffdea8, #fec84e) */
@@ -76,7 +87,7 @@
          background-color: #4caf50;
          box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.562);
       }
-   </style>
+   </style> -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
@@ -91,22 +102,24 @@
 
    <div class="my_form">
       <h2 class="font_style">Please log in</h2>
-      <form class="font_style" onsubmit="checkDetails()" >
+      <form class="font_style">
          <div class="div1">
             <label class="font_style"> user name</label>
-            <input type="email" class="email_1" placeholder="type your username">
+            <input type="email" class="email_1" placeholder="example@example.com">
          </div>
          <div class="div1">
             <label class="font_style"> password</label>
             <input type="password" class="password_1" placeholder="type your password">
          </div>
          <div>
-            <button class="font_style" type="submit">submit</button>
+            <button onclick="checkDetails()" class="font_style" >submit</button>
          </div>
       </form>
    </div>
 
-   <a class="font_style" href="">need help?</a>
+   <a id="help" class="font_style"  href="http://127.0.0.1:5500/help_page.html">need help?</a>
+
+   <!-- onsubmit="checkDetails()" -->
 
 </body>
 
